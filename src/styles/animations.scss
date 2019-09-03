@@ -1,0 +1,19 @@
+// source: https://reactjs.org/docs/animation.html :)
+
+.fade-enter {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+    &-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    }
+}
+
+.fade-leave {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+    &-active{
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+    }
+}

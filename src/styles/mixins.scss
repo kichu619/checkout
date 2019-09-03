@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+// mobile
+@mixin sm {
+    @media (min-width: #{$bp-sm}) {
+        @content;
+    }
+}
+
+// tablet
+@mixin md {
+    @media (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+
+// small desktops/laptops
+@mixin lg {
+    @media (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$bp-xl}) {
+        @content;
+    }
+}

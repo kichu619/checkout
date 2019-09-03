@@ -1,0 +1,35 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.cart {
+    @include md {
+        width: 100%;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: $grey;
+        margin: auto;
+        border-bottom: 2px solid; 
+    }
+
+    &__subheading {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        &--products {
+            width: 30%;
+            }  
+        &--quantity {
+            width: 30%;
+        }
+        &--price {
+            width: 15%;
+        }
+        &--total {
+            width: 15%;
+        }
+    }
+}  
